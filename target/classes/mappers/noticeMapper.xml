@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="notice">
+	<select id="noticeList" resultType="com.myshop.dto.SampleDTO">
+		select * from notice
+	</select>
+	<select id="noticeDetail" resultType="com.myshop.dto.SampleDTO">
+		select * from notice where notiNo = #{notiNO}
+	</select>
+	<select id="noticeCnt" resultType="integer">
+		select count(*) from notice
+	</select>
+	<select id="noticeInsert">
+		insert into notice(notiTitle, notiText, notiCnt, notiRegDate) values(#{notiTitle}, #{notiText}, default, default)
+	</select>
+	<select id="noticeDelete">
+		delete from notice where notiNO=#{notiNo}
+	</select>
+	<select id="noticeEdit">
+		update notice set notiTitle=#{notiTitle}, notiText=#{notiText} where notiNo=#{notiNo}
+	</select>
+	<select id="notiCntUpdate">
+		update notice set notiCnt = notiCnt + 1 where notiNo = #{notiNo}
+	</select>
+</mapper>
