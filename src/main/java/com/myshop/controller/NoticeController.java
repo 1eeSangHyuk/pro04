@@ -27,7 +27,7 @@ public class NoticeController {
 		int i = noticeService.noticeCnt();
 		model.addAttribute("noticeList", noticeList);
 		model.addAttribute("cnt", i);
-		return "notice/noticeList";		//WEB-INF/views/notice/noticeList.jsp
+		return "notice/noticeList";		// WEB-INF/views/notice/noticeList.jsp
 	}
 	
 	@GetMapping("noticeDetail.do")

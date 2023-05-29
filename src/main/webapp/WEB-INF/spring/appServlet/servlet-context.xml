@@ -15,6 +15,7 @@
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<!--  접근 가능한 자원(.jsp, etc)에 대한 설정 -->
 	<resources mapping="/resources/**" location="/resources/" />
+	<resources mapping="/data/**" location="/data/" />
 	
 	<resources mapping="/notice/**" location="/WEB-INF/views/notice/" />
 
