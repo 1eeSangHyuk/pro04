@@ -15,5 +15,13 @@
 </h1>
 <a href="notice/noticeList.do">목록</a>
 <P>  The time on the server is ${serverTime}. </P>
+<a href="member/terms.do">회원가입</a>
+<a href="member/loginForm.do">로그인 - 컨트롤러에서 세션 처리</a>
+<a href="member/">로그인 - 서비스에서 세션 처리</a>
+<a href="member/">로그인 - DAO에서 세션 처리</a>
+<c:if test="${sid != null}">
+${sid }님 안녕하세요!
+<a href="member/logout.do">로그아웃</a>
+</c:if>
 </body>
 </html>

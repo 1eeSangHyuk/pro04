@@ -17,7 +17,17 @@
 	<resources mapping="/resources/**" location="/resources/" />
 	<resources mapping="/data/**" location="/data/" />
 	
-	<resources mapping="/notice/**" location="/WEB-INF/views/notice/" />
+	<resources mapping="/notice/**" location="/WEB-INF/views/notice" />
+	<resources mapping="/include/**" location="/WEB-INF/views/include" />
+	<resources mapping="/board/**" location="/WEB-INF/views/board" />
+	<resources mapping="/member/**" location="/WEB-INF/views/member" />
+	<resources mapping="/reservate/**" location="/WEB-INF/views/reservate" />
+	<resources mapping="/qna/**" location="/WEB-INF/views/qna" />
+	<resources mapping="/databank/**" location="/WEB-INF/views/databank" />
+	<resources mapping="/util/**" location="/WEB-INF/views/util" />
+	<resources mapping="/sample/**" location="/WEB-INF/views/sample" />
+	<resources mapping="/check/**" location="/WEB-INF/views/check" />
+	<resources mapping="/free/**" location="/WEB-INF/views/free" />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<!-- 리졸버에 대한 접두사와 접미사 설정 -->
@@ -36,6 +46,6 @@
 		<beans:constructor-arg value="D:\lsh\spring1\pro04\src\main\webapp\resources\upload"></beans:constructor-arg>
 	</beans:bean>
 	
-	<context:component-scan base-package="com.myshop.base" />
+	<context:component-scan base-package="com.myshop.*" />
 	
 </beans:beans>
