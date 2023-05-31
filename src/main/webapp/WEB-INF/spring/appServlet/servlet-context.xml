@@ -23,7 +23,8 @@
 	<resources mapping="/member/**" location="/WEB-INF/views/member" />
 	<resources mapping="/reservate/**" location="/WEB-INF/views/reservate" />
 	<resources mapping="/qna/**" location="/WEB-INF/views/qna" />
-	<resources mapping="/databank/**" location="/WEB-INF/views/databank" />
+	<resources mapping="/prodduct/**" location="/WEB-INF/views/product" />
+	<resources mapping="/basket/**" location="/WEB-INF/views/basket" />
 	<resources mapping="/util/**" location="/WEB-INF/views/util" />
 	<resources mapping="/sample/**" location="/WEB-INF/views/sample" />
 	<resources mapping="/check/**" location="/WEB-INF/views/check" />
@@ -47,5 +48,8 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.myshop.*" />
+	
+	<!-- 인터셉터 로그인을 해야만 지정한 권한의 기능을 수행할 수 있도록 하는 제한점 -->
+	
 	
 </beans:beans>

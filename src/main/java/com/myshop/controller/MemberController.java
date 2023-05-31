@@ -93,7 +93,7 @@ public class MemberController {
 		mdto.setId(id);
 		mdto.setPw(pw);
 		MemberDTO login = mService.signIn(mdto);
-		if(login!=null && login.getPw().equals(mdto.getPw())) {
+		if(login!=null && pwdEncoder.matches(login.getPw(), mdto.getPw())) {
 			session.setAttribute("sid", id);
 			session.setAttribute("member", login);
 			return "redirect:/";

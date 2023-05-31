@@ -19,6 +19,7 @@
 <a href="member/loginForm.do">로그인 - 컨트롤러에서 세션 처리</a>
 <a href="member/">로그인 - 서비스에서 세션 처리</a>
 <a href="member/">로그인 - DAO에서 세션 처리</a>
+<a href="sample/main">get/post test</a>
 <c:if test="${sid != null}">
 ${sid }님 안녕하세요!
 <a href="member/logout.do">로그아웃</a>
